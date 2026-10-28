@@ -1,0 +1,17 @@
+<idea-plugin>
+  <idea-version since-build="262" until-build="262.*" />
+  <version>1.0.0</version>
+  <id>dev.chocobo.progress</id>
+  <name>Chocobo Progress</name>
+  <vendor>Guillaume Barranco</vendor>
+  <description><![CDATA[Animated Chocobos replace IntelliJ IDEA's
+        standard progress bars.
+
+        Choose your favorite Chocobo color or enable
+        random colors for each progress bar.]]></description>
+  <extensions defaultExtensionNs="com.intellij">
+    <postStartupActivity implementation="dev.chocobo.progress.ChocoboStartup" />
+    <applicationService serviceImplementation="dev.chocobo.progress.ChocoboSettings" />
+    <applicationConfigurable id="chocobo.progress.settings" displayName="Chocobo Progress" instance="dev.chocobo.progress.ChocoboConfigurable" />
+  </extensions>
+</idea-plugin>

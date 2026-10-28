@@ -1,0 +1,25 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/workspace/nca-api">
+          <value>
+            <RecentProjectMetaInfo frameTitle="nca-api" projectWorkspaceId="3LEpCdTGMDnPbHUjScesgy7hKQP">
+              <option name="activationTimestamp" value="1793209188469" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="build" value="IU-262.9437.185" />
+              <option name="buildTimestamp" value="1786251600000" />
+              <option name="colorInfo">
+                <RecentProjectColorInfo associatedIndex="5" customColor="0d090756" />
+              </option>
+              <frame x="56" y="53" width="1400" height="819" />
+              <option name="productionCode" value="IU" />
+              <option name="projectOpenTimestamp" value="1793209004839" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastOpenedProject" value="$USER_HOME$/workspace/nca-api" />
+  </component>
+</application>

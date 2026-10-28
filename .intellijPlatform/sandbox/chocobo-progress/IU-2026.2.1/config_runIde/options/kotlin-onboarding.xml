@@ -1,0 +1,9 @@
+<application>
+  <component name="MavenBuildProcessSatisfactionSurveyStore">
+    <option name="daysWithKotlinMavenBuilds" value="1" />
+    <option name="firstKotlinMavenBuildTime" value="1793209091" />
+    <option name="firstMavenBuildTime" value="1793209091" />
+    <option name="lastKotlinMavenBuildTime" value="1793209114" />
+    <option name="nextCountedMavenBuild" value="1793295491" />
+  </component>
+</application>

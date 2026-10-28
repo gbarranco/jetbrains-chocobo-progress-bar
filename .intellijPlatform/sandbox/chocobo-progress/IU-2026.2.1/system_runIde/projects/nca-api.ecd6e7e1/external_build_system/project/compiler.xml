@@ -1,0 +1,7 @@
+<project>
+  <component name="ExternalCompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="nca-api" target="25" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,2 @@
+#!/bin/sh
+"/Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/jbr/Contents/Home/bin/java" -cp "/Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/vcs-git/lib/git4idea-rt.jar:/Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/lib/externalProcess-rt.jar" git4idea.http.GitAskPassApp "$@"

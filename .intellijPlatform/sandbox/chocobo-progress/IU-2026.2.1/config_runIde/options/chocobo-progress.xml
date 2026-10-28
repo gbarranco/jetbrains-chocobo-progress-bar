@@ -1,0 +1,5 @@
+<application>
+  <component name="ChocoboProgressSettings">
+    <option name="mode" value="random" />
+  </component>
+</application>

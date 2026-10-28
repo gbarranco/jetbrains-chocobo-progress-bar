@@ -1,0 +1,188 @@
+2026-10-28 18:37:23,263 [      4]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:37:23,271 [     12]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:37:23,383 [    124]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 106 ms
+2026-10-28 18:37:23,462 [    203]   INFO - #c.i.o.u.LowMemoryWatcherManager - Use ExponentiallySmoothingTracker(90000 ms)
+2026-10-28 18:37:23,465 [    206]   INFO - #c.i.o.u.LowMemoryWatcherManager - Subscribing to MemoryPool[G1 Old Gen]{max: 8589934592, threshold: 8160437760 (0.95 * max)}
+2026-10-28 18:37:23,465 [    206]   INFO - #c.i.o.u.LowMemoryWatcherManager - Skip regular GC time updating because org.jetbrains.jps.service.impl.SharedThreadPoolImpl@7fc17f16is not a ScheduledExecutorService
+2026-10-28 18:37:23,468 [    209]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:37:23,528 [    269]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:37:23,529 [    270]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:37:23,732 [    473]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 263 ms
+2026-10-28 18:37:23,732 [    473]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:37:23,770 [    511]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:37:23,851 [    592]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:37:23,869 [    610]   INFO - #o.j.j.i.IncProjectBuilder - Building project; isRebuild:true; isMake:false parallel compilation:true; dependency graph enabled:true; library dependencies tracking enabled:false
+2026-10-28 18:37:23,870 [    611]   INFO - #o.j.k.j.b.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2026-10-28 18:37:23,871 [    612]   INFO - #o.j.k.j.b.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2026-10-28 18:37:23,871 [    612]   INFO - #o.j.k.j.b.KotlinBuilder - Label in local history: build started 6aec04e2
+2026-10-28 18:37:23,875 [    616]   INFO - #o.j.j.b.i.CompilerReferenceIndex - backward reference index version doesn't exist
+2026-10-28 18:37:23,886 [    627]   INFO - #c.i.u.i.i.SlruIndexStorageCacheProvider - SLRU cache will be used for indexes
+2026-10-28 18:37:23,887 [    628]   INFO - #c.i.u.i.i.MapIndexStorageCacheProvider$Companion - Default index storage cache provider [com.intellij.util.indexing.impl.SlruIndexStorageCacheProvider@5294a257] is used
+2026-10-28 18:37:25,459 [   2200]   INFO - #o.j.j.i.IncProjectBuilder - Cleaned output directories in 1509 ms
+2026-10-28 18:37:25,486 [   2227]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:37:25,486 [   2227]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:37:26,324 [   3065]   INFO - #o.j.k.j.b.KotlinBuilder - KotlinTargetsIndex created in 6 ms
+2026-10-28 18:37:26,328 [   3069]   INFO - #o.j.k.j.b.KotlinBuilder - Total Kotlin global compile context initialization time: 11 ms
+2026-10-28 18:37:26,338 [   3079]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph nca-api differentiate done in PT0.000518625S
+2026-10-28 18:37:26,340 [   3081]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph nca-api integrate done in PT0.001936084S
+2026-10-28 18:37:54,285 [  31026]   INFO - #o.j.k.j.b.KotlinBuilder - Compiled successfully
+2026-10-28 18:37:57,199 [  33940]   INFO - #o.j.j.i.j.JavaBuilder - Compiling 761 java files; module: nca-api
+2026-10-28 18:37:59,558 [  36299]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph nca-api differentiate done in PT0.008321292S
+2026-10-28 18:38:00,133 [  36874]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph nca-api integrate done in PT0.574615791S
+2026-10-28 18:38:00,358 [  37099]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph tests of nca-api differentiate done in PT0.000007375S
+2026-10-28 18:38:00,358 [  37099]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph tests of nca-api integrate done in PT0.000084042S
+2026-10-28 18:38:09,219 [  45960]   INFO - #o.j.k.j.b.KotlinBuilder - Compiled successfully
+2026-10-28 18:38:09,845 [  46586]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph tests of nca-api differentiate done in PT0.000666792S
+2026-10-28 18:38:09,918 [  46659]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph tests of nca-api integrate done in PT0.072748833S
+2026-10-28 18:38:10,232 [  46973]   INFO - #o.j.j.c.BuildSession - Build duration: Builder 'Backward references indexer' took 135 ms; 0 sources processed
+2026-10-28 18:38:10,232 [  46973]   INFO - #o.j.j.c.BuildSession - Build duration: Builder 'IntelliLang pattern validator' took 53 ms; 0 sources processed
+2026-10-28 18:38:10,232 [  46973]   INFO - #o.j.j.c.BuildSession - Build duration: Builder 'Java' took 1 s 880 ms; 761 sources processed (2 ms per file)
+2026-10-28 18:38:10,232 [  46973]   INFO - #o.j.j.c.BuildSession - Build duration: Builder 'Kotlin Builder' took 40 s 285 ms; 2148 sources processed (18 ms per file)
+2026-10-28 18:38:10,232 [  46973]   INFO - #o.j.j.c.BuildSession - Build duration: Builder 'Maven resources compiler' took 4 s 358 ms; 494 sources processed (8 ms per file)
+2026-10-28 18:38:10,233 [  46974]   INFO - #o.j.j.i.j.JavaBuilder - javac 27.0.1.0.2 was used to compile [nca-api]
+2026-10-28 18:38:11,214 [  47955]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0.009514084S
+2026-10-28 18:38:11,214 [  47955]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0.64938475S
+2026-10-28 18:38:11,215 [  47956]   INFO - #o.j.j.c.BuildSession - FilePageCache stats: pageHits=115387, pageFastCacheHits=779443, regularPageLoads=224, pageLoadsAboveSizeThreshold=0, pageLoadUs=301586, pageDisposalUs=247, pageStoreUs=202882, bytesStored=19597064, capacityInBytes=629145600, disposedBuffers=224 maxRegisteredFiles=104 maxCacheSizeInBytes=74317824totalSizeCachedBytes=0
+2026-10-28 18:38:11,687 [      3]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:11,692 [      8]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:11,779 [     95]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 81 ms
+2026-10-28 18:38:11,790 [    106]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:11,844 [    160]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:11,846 [    162]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:12,022 [    338]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 232 ms
+2026-10-28 18:38:12,023 [    339]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:12,053 [    369]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:12,151 [    467]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:12,186 [    502]   INFO - #o.j.j.c.BuildMain - Pre-loaded process ready in 499 ms
+2026-10-28 18:38:28,547 [  16863]   INFO - #o.j.j.c.BuildMain - Build canceled, but no build session is running. Exiting.
+2026-10-28 18:38:28,555 [  16871]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:38:28,555 [  16871]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:38:29,025 [      3]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:29,030 [      8]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:29,112 [     90]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 76 ms
+2026-10-28 18:38:29,179 [    157]   INFO - #c.i.o.u.LowMemoryWatcherManager - Use ExponentiallySmoothingTracker(90000 ms)
+2026-10-28 18:38:29,180 [    158]   INFO - #c.i.o.u.LowMemoryWatcherManager - Subscribing to MemoryPool[G1 Old Gen]{max: 8589934592, threshold: 8160437760 (0.95 * max)}
+2026-10-28 18:38:29,182 [    160]   INFO - #c.i.o.u.LowMemoryWatcherManager - Skip regular GC time updating because org.jetbrains.jps.service.impl.SharedThreadPoolImpl@3fb50f96is not a ScheduledExecutorService
+2026-10-28 18:38:29,185 [    163]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:29,236 [    214]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:29,237 [    215]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:29,423 [    401]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 237 ms
+2026-10-28 18:38:29,423 [    401]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:29,457 [    435]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:29,495 [    473]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:29,529 [    507]   INFO - #o.j.j.i.IncProjectBuilder - Affected build targets count: 0
+2026-10-28 18:38:29,531 [    509]   INFO - #o.j.j.i.IncProjectBuilder - Building project; isRebuild:false; isMake:true parallel compilation:true; dependency graph enabled:true; library dependencies tracking enabled:false
+2026-10-28 18:38:29,532 [    510]   INFO - #o.j.k.j.b.KotlinBuilder - is Kotlin incremental compilation enabled for JVM: true
+2026-10-28 18:38:29,533 [    511]   INFO - #o.j.k.j.b.KotlinBuilder - is Kotlin compiler daemon enabled: true
+2026-10-28 18:38:29,533 [    511]   INFO - #o.j.k.j.b.KotlinBuilder - Label in local history: build started 1bcf42d3
+2026-10-28 18:38:29,541 [    519]   INFO - #c.i.u.i.i.SlruIndexStorageCacheProvider - SLRU cache will be used for indexes
+2026-10-28 18:38:29,541 [    519]   INFO - #c.i.u.i.i.MapIndexStorageCacheProvider$Companion - Default index storage cache provider [com.intellij.util.indexing.impl.SlruIndexStorageCacheProvider@75229ada] is used
+2026-10-28 18:38:29,572 [    550]   INFO - #o.j.j.i.IncProjectBuilder - Cleaned output directories in 1 ms
+2026-10-28 18:38:29,775 [    753]   INFO - #o.j.k.j.b.KotlinBuilder - KotlinTargetsIndex created in 6 ms
+2026-10-28 18:38:29,785 [    763]   INFO - #o.j.k.j.b.KotlinBuilder - Total Kotlin global compile context initialization time: 17 ms
+2026-10-28 18:38:29,855 [    833]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:38:29,855 [    833]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:38:29,855 [    833]   INFO - #o.j.j.c.BuildSession - FilePageCache stats: pageHits=0, pageFastCacheHits=28300, regularPageLoads=46, pageLoadsAboveSizeThreshold=0, pageLoadUs=13945, pageDisposalUs=24, pageStoreUs=496, bytesStored=16384, capacityInBytes=629145600, disposedBuffers=46 maxRegisteredFiles=68 maxCacheSizeInBytes=28508160totalSizeCachedBytes=0
+2026-10-28 18:38:29,976 [      3]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:29,981 [      8]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:30,069 [     96]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 83 ms
+2026-10-28 18:38:30,081 [    108]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:30,133 [    160]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:30,134 [    161]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:30,305 [    332]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 224 ms
+2026-10-28 18:38:30,305 [    332]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:30,332 [    359]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:30,381 [    408]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:30,425 [    452]   INFO - #o.j.j.c.BuildMain - Pre-loaded process ready in 448 ms
+2026-10-28 18:38:31,929 [   1956]   INFO - #c.i.o.u.LowMemoryWatcherManager - Use ExponentiallySmoothingTracker(90000 ms)
+2026-10-28 18:38:31,930 [   1957]   INFO - #c.i.o.u.LowMemoryWatcherManager - Subscribing to MemoryPool[G1 Old Gen]{max: 8589934592, threshold: 8160437760 (0.95 * max)}
+2026-10-28 18:38:31,930 [   1957]   INFO - #c.i.o.u.LowMemoryWatcherManager - Skip regular GC time updating because org.jetbrains.jps.service.impl.SharedThreadPoolImpl@50238b3ais not a ScheduledExecutorService
+2026-10-28 18:38:31,930 [   1957]   INFO - #o.j.j.c.BuildSession - No changes found since last build. Exiting.
+2026-10-28 18:38:31,936 [   1963]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:38:31,936 [   1963]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:38:31,937 [   1964]   INFO - #o.j.j.c.BuildSession - FilePageCache stats: pageHits=0, pageFastCacheHits=178, regularPageLoads=9, pageLoadsAboveSizeThreshold=0, pageLoadUs=5158, pageDisposalUs=3, pageStoreUs=0, bytesStored=0, capacityInBytes=629145600, disposedBuffers=9 maxRegisteredFiles=26 maxCacheSizeInBytes=9437184totalSizeCachedBytes=0
+2026-10-28 18:38:32,080 [      3]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:32,085 [      8]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:32,160 [     83]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 70 ms
+2026-10-28 18:38:32,170 [     93]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:32,219 [    142]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:32,220 [    143]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:32,384 [    307]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 213 ms
+2026-10-28 18:38:32,385 [    308]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:32,415 [    338]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:32,451 [    374]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:32,486 [    409]   INFO - #o.j.j.c.BuildMain - Pre-loaded process ready in 406 ms
+2026-10-28 18:38:33,247 [   1170]   INFO - #c.i.o.u.LowMemoryWatcherManager - Use ExponentiallySmoothingTracker(90000 ms)
+2026-10-28 18:38:33,248 [   1171]   INFO - #c.i.o.u.LowMemoryWatcherManager - Subscribing to MemoryPool[G1 Old Gen]{max: 8589934592, threshold: 8160437760 (0.95 * max)}
+2026-10-28 18:38:33,248 [   1171]   INFO - #c.i.o.u.LowMemoryWatcherManager - Skip regular GC time updating because org.jetbrains.jps.service.impl.SharedThreadPoolImpl@1ae034ecis not a ScheduledExecutorService
+2026-10-28 18:38:33,249 [   1172]   INFO - #o.j.j.c.BuildSession - No changes found since last build. Exiting.
+2026-10-28 18:38:33,254 [   1177]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:38:33,255 [   1178]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:38:33,255 [   1178]   INFO - #o.j.j.c.BuildSession - FilePageCache stats: pageHits=0, pageFastCacheHits=178, regularPageLoads=9, pageLoadsAboveSizeThreshold=0, pageLoadUs=5326, pageDisposalUs=3, pageStoreUs=0, bytesStored=0, capacityInBytes=629145600, disposedBuffers=9 maxRegisteredFiles=26 maxCacheSizeInBytes=9437184totalSizeCachedBytes=0
+2026-10-28 18:38:33,418 [      3]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:33,423 [      8]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:33,500 [     85]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 71 ms
+2026-10-28 18:38:33,510 [     95]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:33,559 [    144]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:33,560 [    145]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:33,723 [    308]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 213 ms
+2026-10-28 18:38:33,723 [    308]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:33,754 [    339]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:33,791 [    376]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:33,824 [    409]   INFO - #o.j.j.c.BuildMain - Pre-loaded process ready in 405 ms
+2026-10-28 18:38:34,232 [    817]   INFO - #c.i.o.u.LowMemoryWatcherManager - Use ExponentiallySmoothingTracker(90000 ms)
+2026-10-28 18:38:34,233 [    818]   INFO - #c.i.o.u.LowMemoryWatcherManager - Subscribing to MemoryPool[G1 Old Gen]{max: 8589934592, threshold: 8160437760 (0.95 * max)}
+2026-10-28 18:38:34,233 [    818]   INFO - #c.i.o.u.LowMemoryWatcherManager - Skip regular GC time updating because org.jetbrains.jps.service.impl.SharedThreadPoolImpl@51b20249is not a ScheduledExecutorService
+2026-10-28 18:38:34,233 [    818]   INFO - #o.j.j.c.BuildSession - No changes found since last build. Exiting.
+2026-10-28 18:38:34,239 [    824]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:38:34,239 [    824]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S
+2026-10-28 18:38:34,240 [    825]   INFO - #o.j.j.c.BuildSession - FilePageCache stats: pageHits=0, pageFastCacheHits=178, regularPageLoads=9, pageLoadsAboveSizeThreshold=0, pageLoadUs=5333, pageDisposalUs=3, pageStoreUs=0, bytesStored=0, capacityInBytes=629145600, disposedBuffers=9 maxRegisteredFiles=26 maxCacheSizeInBytes=9437184totalSizeCachedBytes=0
+2026-10-28 18:38:34,374 [      4]   INFO - #o.j.j.c.BuildMain - ==================================================
+2026-10-28 18:38:34,379 [      9]   INFO - #o.j.j.c.BuildMain - Build process started. Classpath: /Users/guillaume/.gradle/caches/9.6.0/transforms/709092f3026c139c7ff3cca64b4e7fc5/transformed/idea-2026.2.1-aarch64/plugins/java/lib/jps-launcher.jar
+2026-10-28 18:38:34,455 [     85]   INFO - #o.j.j.c.BuildMain - Connection to IDE established in 71 ms
+2026-10-28 18:38:34,466 [     96]   INFO - #o.j.j.c.JpsModelLoaderImpl - Loading model: project path = /Users/guillaume/workspace/nca-api, global options path = /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/config_runIde/options
+2026-10-28 18:38:34,515 [    145]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/project
+2026-10-28 18:38:34,516 [    146]   INFO - #o.j.j.m.s.JpsProjectLoader - External project config dir is used for modules: /Users/guillaume/Downloads/chocobo-intellij-plugin 3/.intellijPlatform/sandbox/chocobo-progress/IU-2026.2.1/system_runIde/projects/nca-api.ecd6e7e1/external_build_system/modules
+2026-10-28 18:38:34,682 [    312]   INFO - #o.j.j.c.JpsModelLoaderImpl - Model loaded in 215 ms
+2026-10-28 18:38:34,682 [    312]   INFO - #o.j.j.c.JpsModelLoaderImpl - Project has 1 modules, 504 libraries
+2026-10-28 18:38:34,710 [    340]   INFO - #c.i.u.i.PageCacheUtils - File page caching params:
+	DEFAULT_PAGE_SIZE: 10485760
+	Direct memory to use, max: 8568963072
+	FilePageCache: regular
+	Regular FilePageCache: 629145600 bytes
+	DirectByteBuffers pool: 104857600 bytes
+2026-10-28 18:38:34,747 [    377]   INFO - #o.j.j.i.s.BuildDataManager - Using DependencyGraph-based build incremental analysis
+2026-10-28 18:38:34,780 [    410]   INFO - #o.j.j.c.BuildMain - Pre-loaded process ready in 406 ms
+2026-10-28 18:39:50,355 [  75985]   INFO - #o.j.j.c.BuildMain - Build canceled, but no build session is running. Exiting.
+2026-10-28 18:39:50,364 [  75994]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total differentiate linear time PT0S
+2026-10-28 18:39:50,364 [  75994]   INFO - #o.j.j.i.s.BuildDataManager - DependencyGraph total integrate     linear time PT0S

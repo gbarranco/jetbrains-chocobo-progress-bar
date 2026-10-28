@@ -1,0 +1,4 @@
+2026-10-28 18:36:47.211 INFO  hook-open: rollout sync: 0 ok, 0 failed
+2026-10-28 18:36:47.430 INFO  observe: delivered 0 fact(s) for /Users/guillaume/workspace/nca-api
+2026-10-28 18:37:47.710 INFO  hook-open: rollout sync: 0 ok, 0 failed
+2026-10-28 18:37:47.932 INFO  observe: delivered 0 fact(s) for /Users/guillaume/workspace/nca-api

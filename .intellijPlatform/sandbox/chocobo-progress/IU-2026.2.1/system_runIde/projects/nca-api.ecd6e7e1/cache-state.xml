@@ -1,0 +1,36 @@
+<project version="4">
+  <component name="ExternalSystemProjectTracker"><![CDATA[{
+  "projectData": {
+    "MAVEN": {
+      "nca-api": {
+        "settingsTracker": {
+          "isDirty": false,
+          "settingsFiles": {
+            "/Users/guillaume/workspace/nca-api/pom.xml": 2095129516,
+            "/Users/guillaume/workspace/nca-api/.mvn/jvm.config": 4141821269,
+            "/Users/guillaume/workspace/nca-api/.mvn/wrapper/maven-wrapper.properties": 3046765815
+          }
+        }
+      }
+    }
+  }
+}]]></component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="RestoreUpdateTree"><![CDATA[{}]]></component>
+  <component name="VcsDirectoryMappingCache">
+    <option name="roots">
+      <set>
+        <option value="$PROJECT_DIR$" />
+      </set>
+    </option>
+    <option name="vcsName" value="Git" />
+  </component>
+  <component name="VfsTimestampMonitor">
+    <option name="lastKnownVfsTimestamp" value="1793208941762" />
+  </component>
+</project>

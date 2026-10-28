@@ -1,0 +1,5 @@
+{"id":"preferences.keymap","name":"|b|messages.KeyMapBundle|k|keymap.display.name|","entries":[{"hit":"|b|messages.CssBundle|k|action.NewStylesheetFile.description|","path":"ActionManager"},{"hit":"|b|messages.CssBundle|k|action.NewStylesheetFile.text|","path":"ActionManager"}]}
+{"id":"editor.breadcrumbs","name":"|b|messages.ApplicationBundle|k|configurable.breadcrumbs|","entries":[{"hit":"CSS"}]}
+{"id":"editor.stickyLines","name":"|b|messages.ApplicationBundle|k|configurable.sticky.lines|","entries":[{"hit":"CSS"}]}
+{"id":"configurable.stylesheets","name":"|b|messages.CssBundle|k|css.stylesheets.configurable.title|"}
+{"id":"settings.css.dialects","name":"|b|messages.CssBundle|k|css.dialects.title|","entries":[{"hit":"|b|messages.CssBundle|k|css.dialects.title|"},{"hit":"|b|messages.LangBundle|k|PerFileConfi..."},{"hit":"|b|messages.LangBundle|k|PerFileConfigurableBase.project.mapping|;|b|messages.CssBundle|k|css.dialects.column.title|"}]}
