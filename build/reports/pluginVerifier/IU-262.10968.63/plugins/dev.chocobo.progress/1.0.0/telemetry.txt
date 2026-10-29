@@ -1,9 +1,0 @@
-Plugin ID: dev.chocobo.progress
-Plugin Version: 1.0.0
-Descriptor parsed in: 118 ms
-Descriptor parsed (raw ms): 118
-Plugin size (bytes): 134829
-Verified classes in plugin artifact: 8
-Verification time: 2 m 18 s 949 ms
-Verification time (raw ms): 138949
-
