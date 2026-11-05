@@ -61,7 +61,12 @@ object ChocoboTestStatus {
             override fun onTestingFinished(testsRoot: SMTestProxy.SMRootTestProxy) {
                 synchronized(this@ChocoboTestStatus) {
                     runningRoots.remove(testsRoot)
-                    lastResult = if (failedRoots.remove(testsRoot) || testsRoot.isDefect) "red" else "green"
+                    val failed = failedRoots.remove(testsRoot) || testsRoot.isDefect
+                    lastResult = when {
+                        failed -> "red"
+                        testsRoot.wasTerminated() || testsRoot.isEmptySuite -> null
+                        else -> "green"
+                    }
                 }
                 refresh()
             }
