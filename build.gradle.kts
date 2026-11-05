@@ -14,7 +14,10 @@ repositories {
 }
 
 dependencies {
-    intellijPlatform { intellijIdea("2026.2.1") }
+    intellijPlatform {
+        intellijIdea("2026.2.1")
+        bundledPlugin("com.intellij.java")
+    }
 }
 
 kotlin {
