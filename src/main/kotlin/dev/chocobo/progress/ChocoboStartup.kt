@@ -12,6 +12,7 @@ import javax.swing.plaf.ComponentUI
 class ChocoboStartup : ProjectActivity {
     override suspend fun execute(project: Project) {
         ChocoboInstaller.install()
+        ChocoboTestStatus.attach(project)
     }
 }
 
