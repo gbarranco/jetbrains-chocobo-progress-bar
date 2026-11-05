@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "dev.chocobo"
-version = "1.0.0"
+version = "1.1.0"
 
 repositories {
     mavenCentral()
@@ -29,6 +29,10 @@ tasks.withType<JavaCompile>().configureEach {
 }
 
 intellijPlatform {
+    publishing {
+        token = providers.environmentVariable("PUBLISH_TOKEN")
+        channels = listOf("default")
+    }
     pluginConfiguration {
         id = "dev.chocobo.progress"
         name = "Chocobo Progress"
