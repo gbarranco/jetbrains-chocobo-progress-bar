@@ -1,3 +1,19 @@
-#./build
-./.intellijPlatform
-./.gradle
+# Gradle generated files
+.gradle/
+build/
+.intellijPlatform/
+
+# IntelliJ IDEA local settings
+.idea/
+*.iml
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local credentials and environment
+.env
+.env.*
+!.env.example
+local.properties
