@@ -36,8 +36,15 @@ class ChocoboProgressBarUI : BasicProgressBarUI() {
         try {
             val settings = app.getService(ChocoboSettings::class.java)
             // Pick once per progress bar, not once per animation frame.
-            val selected = chosenColor ?: settings.selectedColor().also { chosenColor = it }
-            ChocoboPainter.paint(copy, progressBar, selected)
+            val result = ChocoboTestStatus.colorFor(progressBar)
+            val running = ChocoboTestStatus.isRunning(progressBar)
+            val randomMode = settings.snapshot().mode == "random"
+            val selected = result ?: chosenColor ?: settings.selectedColor().also { chosenColor = it }
+            val safeColor = if (result == null && running && randomMode && selected in listOf("red", "green")) {
+                ChocoboPainter.COLORS.filterNot { it == "red" || it == "green" }
+                    .random().also { chosenColor = it }
+            } else selected
+            ChocoboPainter.paint(copy, progressBar, safeColor)
         } finally { copy.dispose() }
     }
 }

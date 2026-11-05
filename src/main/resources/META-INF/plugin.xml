@@ -10,6 +10,7 @@
         random colors for each progress bar.
     ]]></description>
     <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
     <extensions defaultExtensionNs="com.intellij">
         <postStartupActivity implementation="dev.chocobo.progress.ChocoboStartup"/>
         <applicationService serviceImplementation="dev.chocobo.progress.ChocoboSettings"/>
