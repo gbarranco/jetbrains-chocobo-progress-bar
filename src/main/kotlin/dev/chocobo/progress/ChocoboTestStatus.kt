@@ -61,16 +61,29 @@ object ChocoboTestStatus {
             override fun onTestingFinished(testsRoot: SMTestProxy.SMRootTestProxy) {
                 synchronized(this@ChocoboTestStatus) {
                     runningRoots.remove(testsRoot)
-                    val failed = failedRoots.remove(testsRoot) || testsRoot.isDefect
+                    // isDefect on a suite also includes ignored tests, so it cannot
+                    // be used to decide whether a run failed.
+                    val failed = failedRoots.remove(testsRoot) || hasFailedTests(testsRoot)
                     lastResult = when {
+                        testsRoot.wasTerminated() -> null
                         failed -> "red"
-                        testsRoot.wasTerminated() || testsRoot.isEmptySuite -> null
-                        else -> "green"
+                        hasExecutedTests(testsRoot) -> "green"
+                        else -> null
                     }
                 }
                 refresh()
             }
         })
+    }
+
+    private fun hasFailedTests(node: SMTestProxy): Boolean {
+        if (node.isSuite) return node.children.any(::hasFailedTests)
+        return node.isDefect && !node.isIgnored && !node.wasTerminated()
+    }
+
+    private fun hasExecutedTests(node: SMTestProxy): Boolean {
+        if (node.isSuite) return node.children.any(::hasExecutedTests)
+        return node.isPassed && !node.isIgnored
     }
 
     private fun refresh() {
