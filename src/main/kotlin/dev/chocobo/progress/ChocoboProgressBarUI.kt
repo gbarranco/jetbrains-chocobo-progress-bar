@@ -14,7 +14,7 @@ class ChocoboProgressBarUI : BasicProgressBarUI() {
     override fun installUI(c: JComponent) {
         super.installUI(c)
         chosenColor = null
-        animation = Timer(110) {
+        animation = Timer(55) {
             if (progressBar.isShowing) progressBar.repaint()
         }.also { it.start() }
     }
@@ -44,7 +44,7 @@ class ChocoboProgressBarUI : BasicProgressBarUI() {
                 ChocoboPainter.COLORS.filterNot { it == "red" || it == "green" }
                     .random().also { chosenColor = it }
             } else selected
-            ChocoboPainter.paint(copy, progressBar, safeColor)
+            ChocoboPainter.paint(copy, progressBar, safeColor, settings.frameDelayMs())
         } finally { copy.dispose() }
     }
 }
