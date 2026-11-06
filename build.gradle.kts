@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 
 plugins {
     kotlin("jvm") version "2.4.0"
@@ -36,7 +37,7 @@ intellijPlatform {
     pluginVerification {
         ides {
             current()
-            intellijIdea("263.7307.112")
+            create(IntelliJPlatformType.IntellijIdea, "263.7307.112")
         }
     }
     publishing {
