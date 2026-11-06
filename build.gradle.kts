@@ -18,6 +18,7 @@ dependencies {
     intellijPlatform {
         intellijIdea("2026.2.1")
         bundledPlugin("com.intellij.java")
+        bundledModule("intellij.platform.smRunner")
     }
 }
 
