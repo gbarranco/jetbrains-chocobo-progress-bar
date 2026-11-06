@@ -40,7 +40,7 @@ object ChocoboPainter {
             }
         }
 
-    fun paint(g: Graphics2D, bar: JProgressBar, color: String) {
+    fun paint(g: Graphics2D, bar: JProgressBar, color: String, frameDelayMs: Int = 110) {
         val w = bar.width; val h = bar.height
         if (w <= 0 || h <= 0) return
         val amount = if (bar.isIndeterminate) {
@@ -58,7 +58,7 @@ object ChocoboPainter {
         g.fillRoundRect(0, h / 3, fill, (h / 3).coerceAtLeast(4), 7, 7)
 
         val direction = if (bar.isIndeterminate && (System.currentTimeMillis() / 22L) % 200L >= 100L) "left" else "right"
-        val frame = ((System.currentTimeMillis() / 110L) % 5L + 1L).toInt()
+        val frame = ((System.currentTimeMillis() / frameDelayMs.coerceAtLeast(1).toLong()) % 5L + 1L).toInt()
         val sprite = image("chocobo_${color}_${direction}_${frame.toString().padStart(2, '0')}.png")
             ?: image("chocobo_${color}_${direction}_01.png")
         val spriteSize = minOf(32, h.coerceAtLeast(1))
