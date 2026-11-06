@@ -1,12 +1,13 @@
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
 
 plugins {
     kotlin("jvm") version "2.4.0"
-    id("org.jetbrains.intellij.platform") version "2.19.0"
+    id("org.jetbrains.intellij.platform") version "2.20.0"
 }
 
 group = "dev.chocobo"
-version = "1.1.0"
+version = "1.1.1"
 
 repositories {
     mavenCentral()
@@ -17,6 +18,7 @@ dependencies {
     intellijPlatform {
         intellijIdea("2026.2.1")
         bundledPlugin("com.intellij.java")
+        bundledModule("intellij.platform.smRunner")
     }
 }
 
@@ -32,6 +34,12 @@ tasks.withType<JavaCompile>().configureEach {
 }
 
 intellijPlatform {
+    pluginVerification {
+        ides {
+            current()
+            create(IntelliJPlatformType.IntellijIdea, "263.7307.112")
+        }
+    }
     publishing {
         token = providers.environmentVariable("PUBLISH_TOKEN")
         channels = listOf("default")
@@ -42,7 +50,7 @@ intellijPlatform {
         version = project.version.toString()
         ideaVersion {
             sinceBuild = "262"
-            untilBuild = "262.*"
+            untilBuild = "263.*"
         }
     }
 }
