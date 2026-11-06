@@ -9,18 +9,21 @@ import com.intellij.openapi.components.Storage
 @State(name = "ChocoboProgressSettings", storages = [Storage("chocobo-progress.xml")])
 class ChocoboSettings : PersistentStateComponent<ChocoboSettings.Data> {
     // Legacy mode/seed are retained only to read existing persisted settings.
-    data class Data(var mode: String = "manual", var color: String = "yellow", var seed: Long = 42L)
+    data class Data(var mode: String = "manual", var color: String = "yellow", var seed: Long = 42L, var speed: String = "NORMAL")
     private var data = Data()
     override fun getState(): Data = data
     override fun loadState(state: Data) {
         data = Data(mode = if (state.mode == "random") "random" else "manual",
-                    color = state.color.takeIf { it in ChocoboPainter.COLORS } ?: "yellow")
+                    color = state.color.takeIf { it in ChocoboPainter.COLORS } ?: "yellow",
+                    speed = state.speed.takeIf { it in AnimationSpeed.entries.map(AnimationSpeed::name) } ?: "NORMAL")
     }
     fun snapshot(): Data = data.copy()
-    fun update(mode: String, color: String) {
+    fun update(mode: String, color: String, speed: String) {
         data = Data(mode = if (mode == "random") "random" else "manual",
-                    color = color.takeIf { it in ChocoboPainter.COLORS } ?: "yellow")
+                    color = color.takeIf { it in ChocoboPainter.COLORS } ?: "yellow",
+                    speed = speed.takeIf { it in AnimationSpeed.entries.map(AnimationSpeed::name) } ?: "NORMAL")
     }
+    fun frameDelayMs(): Int = AnimationSpeed.valueOf(data.speed).frameDelayMs
     fun selectedColor(): String =
         if (data.mode == "random") ChocoboPainter.COLORS.random() else data.color
 }
