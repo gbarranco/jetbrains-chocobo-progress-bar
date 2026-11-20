@@ -1,0 +1,5 @@
+<idea-plugin>
+    <extensions defaultExtensionNs="com.intellij">
+        <postStartupActivity implementation="dev.chocobo.progress.ChocoboJavaStartup"/>
+    </extensions>
+</idea-plugin>

@@ -17,7 +17,7 @@ repositories {
 dependencies {
     intellijPlatform {
         intellijIdea("2026.2.1")
-        bundledPlugin("com.intellij.java")
+        bundledPlugin("com.intellij.java") // Compile-time only; optional at runtime via plugin.xml
         bundledModule("intellij.platform.smRunner")
     }
 }
@@ -51,6 +51,31 @@ intellijPlatform {
         ideaVersion {
             sinceBuild = "262"
             untilBuild = "263.*"
+        }
+    }
+}
+
+/**
+ * Run the plugin in sandboxed JetBrains IDEs without publishing it.
+ * For example: ./gradlew runWebStorm
+ */
+intellijPlatformTesting {
+    runIde {
+        register("runPyCharm") {
+            type = IntelliJPlatformType.PyCharmProfessional
+            version = "2026.2"
+        }
+        register("runWebStorm") {
+            type = IntelliJPlatformType.WebStorm
+            version = "2026.2"
+        }
+        register("runPhpStorm") {
+            type = IntelliJPlatformType.PhpStorm
+            version = "2026.2"
+        }
+        register("runGoLand") {
+            type = IntelliJPlatformType.GoLand
+            version = "2026.2"
         }
     }
 }
