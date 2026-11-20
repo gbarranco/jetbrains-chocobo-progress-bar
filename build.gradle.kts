@@ -17,7 +17,7 @@ repositories {
 dependencies {
     intellijPlatform {
         intellijIdea("2026.2.1")
-        bundledPlugin("com.intellij.java")
+        bundledPlugin("com.intellij.java") // Compile-time only; optional at runtime via plugin.xml
         bundledModule("intellij.platform.smRunner")
     }
 }
