@@ -14,19 +14,19 @@ import javax.swing.SwingUtilities
  * Tracks test runner events rather than inferring test results from progress percentages.
  * Only progress bars inside the SM test runner results UI are affected.
  */
-object ChocoboTestStatus {
+object ChocoboTestStatus : ChocoboTestProvider {
     private val runningRoots = mutableSetOf<SMTestProxy.SMRootTestProxy>()
     private val failedRoots = mutableSetOf<SMTestProxy.SMRootTestProxy>()
     private var lastResult: String? = null
 
     @Synchronized
-    fun colorFor(bar: JProgressBar): String? {
+    override fun colorFor(bar: JProgressBar): String? {
         if (!isTestRunnerBar(bar)) return null
         return if (runningRoots.isNotEmpty()) null else lastResult
     }
 
     @Synchronized
-    fun isRunning(bar: JProgressBar): Boolean = isTestRunnerBar(bar) && runningRoots.isNotEmpty()
+    override fun isRunning(bar: JProgressBar): Boolean = isTestRunnerBar(bar) && runningRoots.isNotEmpty()
 
     private fun isTestRunnerBar(bar: JProgressBar): Boolean {
         var current: Component? = bar.parent
